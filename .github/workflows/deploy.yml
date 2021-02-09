@@ -18,7 +18,7 @@ jobs:
     - name: Build 
       run: gulp copy-html build-sass build-js
     - name: Bundle
-      run: mkdir ./out && mkdir ./out/calendar && mv dist ./out/calendar && cp -r css js ./out/calendar/dist && cp index.html ./out/calendar/dist
+      run: mkdir ./out && mkdir ./out/calendar && mv dist/js ./out/calendar && mv dist/css ./out/calendar && mv dist/index.html ./out/calendar
       
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
